@@ -67,7 +67,16 @@ function ItemForm({ onSubmit, editItem, onCancel }) {
           min="0"
         />
       </div>
-
+        <div className="form-group">
+        <label>Category</label>
+        <input
+          type="text"
+          name="category"
+          value={formData.category}
+          onChange={handleChange}
+          min="0"
+        />
+      </div>
       {/* TODO (LAB TASK): Add your new field input here */}
       {/* Example:
       <div className="form-group">
