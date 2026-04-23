@@ -26,9 +26,8 @@ router.get('/:id', async (req, res) => {
 // CREATE item
 router.post('/', async (req, res) => {
   try {
-    const { name, description, quantity } = req.body;
-    // TODO (LAB TASK): Also destructure your new field from req.body
-    const item = new Item({ name, description, quantity });
+    const { name, description, quantity, category } = req.body;
+    const item = new Item({ name, description, quantity, category });
     const savedItem = await item.save();
     res.status(201).json(savedItem);
   } catch (err) {

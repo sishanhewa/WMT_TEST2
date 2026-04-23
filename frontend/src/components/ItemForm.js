@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './ItemForm.css';
 
-// TODO (LAB TASK): Add your new field to the initial state below
-const initialState = { name: '', description: '', quantity: 0 };
+// Add the new `category` field to the initial state
+const initialState = { name: '', description: '', quantity: 0, category: '' };
 
 function ItemForm({ onSubmit, editItem, onCancel }) {
   const [formData, setFormData] = useState(initialState);
@@ -13,7 +13,7 @@ function ItemForm({ onSubmit, editItem, onCancel }) {
         name: editItem.name || '',
         description: editItem.description || '',
         quantity: editItem.quantity || 0,
-        // TODO (LAB TASK): Include your new field here when editing
+        category: editItem.category || '',
       });
     } else {
       setFormData(initialState);
@@ -74,7 +74,7 @@ function ItemForm({ onSubmit, editItem, onCancel }) {
           name="category"
           value={formData.category}
           onChange={handleChange}
-          min="0"
+          placeholder="e.g. Electronics"
         />
       </div>
       {/* TODO (LAB TASK): Add your new field input here */}

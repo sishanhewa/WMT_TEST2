@@ -17,8 +17,7 @@ function ItemList({ items, onEdit, onDelete }) {
             )}
             <div className="item-meta">
               <span className="item-qty">Qty: {item.quantity}</span>
-              {/* TODO (LAB TASK): Display your new field here */}
-              {/* Example: {item.category && <span className="item-category">{item.category}</span>} */}
+                {item.category && <span className="item-category">{item.category}</span>}
             </div>
           </div>
           <div className="item-actions">
