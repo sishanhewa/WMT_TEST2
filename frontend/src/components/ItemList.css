@@ -1,0 +1,15 @@
+.item-list { display: flex; flex-direction: column; gap: 10px; }
+.empty-state { color: #a0aec0; text-align: center; padding: 30px 0; }
+.item-card { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; transition: box-shadow 0.2s; }
+.item-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.item-info { flex: 1; }
+.item-name { font-size: 1rem; font-weight: 600; color: #2d3748; margin-bottom: 3px; }
+.item-description { font-size: 0.85rem; color: #718096; margin-bottom: 6px; }
+.item-meta { display: flex; gap: 10px; flex-wrap: wrap; }
+.item-qty { font-size: 0.8rem; background: #ebf4ff; color: #3182ce; padding: 2px 8px; border-radius: 12px; }
+.item-category { font-size: 0.8rem; background: #f0fff4; color: #276749; padding: 2px 8px; border-radius: 12px; }
+.item-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.btn-edit { padding: 6px 14px; background: white; color: #667eea; border: 1px solid #667eea; border-radius: 5px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
+.btn-edit:hover { background: #667eea; color: white; }
+.btn-delete { padding: 6px 14px; background: white; color: #e53e3e; border: 1px solid #e53e3e; border-radius: 5px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
+.btn-delete:hover { background: #e53e3e; color: white; }

@@ -1,0 +1,14 @@
+.item-form { display: flex; flex-direction: column; gap: 14px; }
+.form-group { display: flex; flex-direction: column; gap: 5px; }
+.form-group label { font-size: 0.85rem; font-weight: 500; color: #4a5568; }
+.form-group input, .form-group textarea, .form-group select {
+  padding: 9px 12px; border: 1px solid #e2e8f0; border-radius: 6px;
+  font-size: 0.95rem; color: #2d3748; transition: border-color 0.2s;
+  font-family: inherit;
+}
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+.form-actions { display: flex; gap: 10px; margin-top: 4px; }
+.btn-primary { background: #667eea; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 0.95rem; cursor: pointer; font-weight: 500; transition: background 0.2s; }
+.btn-primary:hover { background: #5a67d8; }
+.btn-secondary { background: white; color: #718096; border: 1px solid #e2e8f0; padding: 10px 20px; border-radius: 6px; font-size: 0.95rem; cursor: pointer; transition: all 0.2s; }
+.btn-secondary:hover { background: #f7fafc; }
