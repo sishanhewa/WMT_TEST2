@@ -4,7 +4,7 @@ import ItemForm from './components/ItemForm';
 import ItemList from './components/ItemList';
 import './App.css';
 
-const API_URL = process.env.REACT_APP_API_URL || 'wmttest2-production.up.railway.app';
+const API_URL = process.env.REACT_APP_API_URL || 'https://wmttest2-production.up.railway.app';
 
 function App() {
   const [items, setItems] = useState([]);
